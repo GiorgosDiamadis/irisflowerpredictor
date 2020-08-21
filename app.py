@@ -37,7 +37,7 @@ def predict():
         if prediction[0][i] > prediction[0][maximum]:
             maximum = i
 
-    return render_template("prediction.html", name="species[maximum]")
+    return render_template("prediction.html", name=species[maximum])
 
 
 if __name__ == '__main__':
